@@ -10,6 +10,7 @@
   <name>springSecurityDemo</name>
   <modules>
     <module>CVE-2022-22978</module>
+    <module>CVE-2022-31692</module>
   </modules>
 
   <properties>
