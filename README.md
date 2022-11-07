@@ -11,7 +11,8 @@ By. Whoopsunix
 + Fastjson
   + [24-80含POC](fastjsonDemo)
 + Spring Security
-    + [CVE-2022-22978  Spring Security认证绕过](springSecurityDemo/CVE-2022-22978)
+    + [CVE-2022-22978 Spring Security认证绕过](springSecurityDemo/CVE-2022-22978)
+    + [CVE-2022-31692 Spring Security forward/include 认证绕过](springSecurityDemo/CVE-2022-31692])
 + MongoDB
     + [CVE-2022-22980 Spring Data MongoDB SpEL表达式注入](springDataDemo/CVE-2022-22980)
 + Shiro
