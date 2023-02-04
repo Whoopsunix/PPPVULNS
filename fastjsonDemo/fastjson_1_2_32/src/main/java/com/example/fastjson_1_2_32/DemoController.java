@@ -1,4 +1,4 @@
-package com.example.versioncheck;
+package com.example.fastjson_1_2_32;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -16,17 +16,20 @@ import java.io.PrintWriter;
  */
 @Controller
 public class DemoController {
-
-    @RequestMapping("/aspectj")
+    @RequestMapping("/test")
     @ResponseBody
-    public void aspectj(@RequestBody String jsonData,HttpServletRequest request, HttpServletResponse response) throws Exception{
-        System.out.println(jsonData);
-
-        JSONObject jsonObject = JSON.parseObject(jsonData);
-        String msg = jsonObject.toString();
-        System.out.println(msg);
+    public void test(@RequestBody String jsonData, HttpServletRequest request, HttpServletResponse response) throws Exception {
+//        System.out.println(jsonData);
+        String msg = "";
+        try {
+            JSONObject jsonObject = JSON.parseObject(jsonData);
+            msg = jsonObject.toString();
+            System.out.println(msg);
+        } catch (Exception e) {
+            e.printStackTrace();
+            msg = e.toString();
+        }
         PrintWriter out = response.getWriter();
         out.println(msg);
-
     }
 }

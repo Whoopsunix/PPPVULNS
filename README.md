@@ -9,7 +9,7 @@ By. Whoopsunix
 
 ## 已有环境
 + Fastjson
-  + [24-80含POC](fastjsonDemo)
+  + [24-80 POC check](fastjsonDemo)
 + Spring Security
     + [CVE-2022-22978 Spring Security认证绕过](springSecurityDemo/CVE-2022-22978)
     + [CVE-2022-31692 Spring Security forward/include 认证绕过](springSecurityDemo/CVE-2022-31692])

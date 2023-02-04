@@ -11,6 +11,7 @@
     <modules>
         <module>fastjson1_2_24</module>
         <module>fastjson_blacklist</module>
+        <module>fastjson_1_2_32</module>
         <module>fastjson_1_2_45</module>
         <module>fastjson_1_2_47</module>
         <module>fastjson_1_2_61</module>
@@ -23,10 +24,11 @@
         <module>fastjson_1_2_60</module>
         <module>fastjson_1_2_80</module>
         <module>fastjson_1_2_80_jdk11</module>
-        <module>versionCheck</module>
+        <module>fastjsonCheck</module>
         <module>webDemo</module>
         <module>test</module>
         <module>fastjson_1_2_80_jdk11/groovyPOC</module>
+        <module>wafbypass</module>
     </modules>
 
     <dependencies>
