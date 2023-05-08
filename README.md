@@ -1,15 +1,15 @@
 # 靶场记录
+
 By. Whoopsunix
 
 不定时更新在研究漏洞时搭的环境
 
-每个项目独立
-
-[WIKI](whoopsunix.com)中有配套复现、分析文章
+复现的时候刷到这个项目 [SBCVE](https://github.com/TheKingOfDuck/SBCVE) 就....强烈的共鸣
 
 ## 已有环境
+
 + Fastjson
-  + [24-80 POC check](fastjsonDemo)
+    + [24-80 POC check](fastjsonDemo)
 + Spring Security
     + [CVE-2022-22978 Spring Security认证绕过](springSecurityDemo/CVE-2022-22978)
     + [CVE-2022-31692 Spring Security forward/include 认证绕过](springSecurityDemo/CVE-2022-31692])
@@ -23,6 +23,9 @@ By. Whoopsunix
     + [CVE-2020-26259 XStream 任意文件删除反序列化漏洞](XStreamDemo/Demo)
     + [CVE-2020-26258 XStream < 1.4.15 SSRF漏洞](XStreamDemo/Demo)
     + [CVE-2021-29505 XStream < 1.4.17 反序列化远程代码执行漏洞](XStreamDemo/CVE-2021-29505)
++ others
+    + h2
+      + [CVE-2021-23463 H2 Database 任意文件读取漏洞](h2Demo/CVE-2021-23463)
 
 
 

@@ -3,16 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>PPPVULNS</artifactId>
+    <artifactId>XStreamDemo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>pppTarget</module>
-        <module>MyTest</module>
-        <module>components</module>
+        <module>Demo</module>
     </modules>
     <packaging>pom</packaging>
 
-    <name>PPPVULNS</name>
+    <name>XStreamDemo</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

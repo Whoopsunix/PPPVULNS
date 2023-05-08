@@ -1,0 +1,7 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+#spring:
+#  main:
+#    allow-bean-definition-overriding: true

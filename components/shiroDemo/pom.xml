@@ -3,18 +3,25 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>PPPVULNS</artifactId>
+    <artifactId>shiroDemo</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>pppTarget</module>
-        <module>MyTest</module>
-        <module>components</module>
-    </modules>
     <packaging>pom</packaging>
 
-    <name>PPPVULNS</name>
+    <name>shiroDemo</name>
+    <modules>
+        <module>CVE_2022_32532</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>
