@@ -18,6 +18,7 @@
     <module>fastjsonDemo</module>
     <module>springDataDemo</module>
     <module>structs2Demo</module>
+    <module>springbootDemo</module>
   </modules>
 
   <properties>
