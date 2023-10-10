@@ -19,6 +19,7 @@
     <module>springDataDemo</module>
     <module>structs2Demo</module>
     <module>springbootDemo</module>
+    <module>KafKaDemo</module>
   </modules>
 
   <properties>

