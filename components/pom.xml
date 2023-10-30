@@ -16,6 +16,7 @@
     <module>jacksonDemo</module>
     <module>fastjsonDemo</module>
     <module>structs2Demo</module>
+    <module>ff4jDemo</module>
   </modules>
 
   <properties>
