@@ -4,6 +4,10 @@ By. Whoopsunix
 
 不定时更新在研究漏洞时搭的环境
 
+# Stats
+
+![Alt](https://repobeats.axiom.co/api/embed/b08ab16cbdbcc2cfff679651c882b6c1b7d96928.svg "Repobeats analytics image")
+
 # 组件漏洞
 
 + Fastjson
