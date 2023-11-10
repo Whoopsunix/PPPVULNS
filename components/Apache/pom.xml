@@ -14,6 +14,7 @@
     <module>jxpathDemo</module>
     <module>KafKaDemo</module>
     <module>log4j</module>
+    <module>TapestryDemo</module>
   </modules>
 
   <properties>
