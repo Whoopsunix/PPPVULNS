@@ -6,8 +6,8 @@
     <artifactId>PPPVULNS</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>pppTarget</module>
-        <module>MyTest</module>
+<!--        <module>pppTarget</module>-->
+<!--        <module>MyTest</module>-->
         <module>components</module>
     </modules>
     <packaging>pom</packaging>
