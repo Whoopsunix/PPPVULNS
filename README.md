@@ -19,7 +19,7 @@ By. Whoopsunix
     - log4j
         - [CVE-2021-44228 Apache Log4j 任意代码执行漏洞](components/Apache/log4j/CVE-2021-44228)
     - Tapestry
-        - [CVE-2021-27850 Apache Tapestry 文件读取与反序列化漏洞](components/Apache/TapestryDemo/README.md)
+        - [CVE-2021-27850 Apache Tapestry 文件读取与反序列化漏洞](components/Apache/TapestryDemo)
 - Spring
     - Spring Security
         - [CVE-2022-22978 Spring Security认证绕过](components/SpringDemo/springSecurityDemo/CVE-2022-22978)
@@ -38,6 +38,12 @@ By. Whoopsunix
 - others
     - h2
         - [CVE-2021-23463 H2 Database 任意文件读取漏洞](components/others/h2database/CVE-2021-23463)
+
+# 组件 sink 点记录
+
+- Apache
+  - Apache MINA
+    - [CVE-2022-45047 Apache MINA 代码问题](sinks/MINASSHDDemo)
 
 # Stats
 
