@@ -2,7 +2,7 @@
 
 By. Whoopsunix
 
-不定时更新在研究漏洞时搭的环境
+不定时更新在研究漏洞时搭的环境，有必要的复现文章会同步在 [WIKI](https://whoopsunix.com/)
 
 # 组件漏洞
 
@@ -20,6 +20,9 @@ By. Whoopsunix
         - [CVE-2021-44228 Apache Log4j 任意代码执行漏洞](components/Apache/log4j/CVE-2021-44228)
     - Tapestry
         - [CVE-2021-27850 Apache Tapestry 文件读取与反序列化漏洞](components/Apache/TapestryDemo)
+    - Dubbo
+        - [CVE-2019-17564 Apache Dubbo Provider http协议反序列化漏洞](components/Apache/DubboDemo/CVE-2019-17564)
+        - [CVE-2020-1948 Apache Dubbo Provider dubbo协议反序列化漏洞](components/Apache/DubboDemo/CVE-2020-1948)
 - Spring
     - Spring Security
         - [CVE-2022-22978 Spring Security认证绕过](components/SpringDemo/springSecurityDemo/CVE-2022-22978)
@@ -42,8 +45,8 @@ By. Whoopsunix
 # 组件 sink 点记录
 
 - Apache
-  - Apache MINA
-    - [CVE-2022-45047 Apache MINA 代码问题](sinks/MINASSHDDemo)
+    - Apache MINA
+        - [CVE-2022-45047 Apache MINA 代码问题](sinks/MINASSHDDemo)
 
 # Stats
 
