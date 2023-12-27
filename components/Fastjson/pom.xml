@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>Fastjson</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>fastjson1_2_24</module>
+        <module>fastjson_blacklist</module>
+        <module>fastjson_1_2_32</module>
+        <module>fastjson_1_2_45</module>
+        <module>fastjson_1_2_47</module>
+        <module>fastjson_1_2_61</module>
+        <module>fastjson_1_2_62</module>
+        <module>fastjson_1_2_66</module>
+        <module>fastjson_1_2_66_jdk11</module>
+        <module>fastjson_1_2_67</module>
+        <module>fastjson_1_2_68</module>
+        <module>fastjson_1_2_68_jdk11</module>
+        <module>fastjson_1_2_60</module>
+        <module>fastjson_1_2_80</module>
+        <module>fastjson_1_2_80_jdk11</module>
+        <module>fastjsonCheck</module>
+        <module>webDemo</module>
+        <module>test</module>
+        <module>fastjson_1_2_80_jdk11/groovyPOC</module>
+        <module>wafbypass</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>

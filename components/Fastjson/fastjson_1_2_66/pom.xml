@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>Fastjson</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>fastjson_1_2_66</artifactId>
+    <name>Archetype - fastjson_1_2_66</name>
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.66</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-core -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>1.5.3</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/br.com.anteros/Anteros-Core -->
+        <dependency>
+            <groupId>br.com.anteros</groupId>
+            <artifactId>Anteros-Core</artifactId>
+            <version>1.2.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/br.com.anteros/Anteros-DBCP -->
+        <dependency>
+            <groupId>br.com.anteros</groupId>
+            <artifactId>Anteros-DBCP</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.ignite/ignite-jta -->
+        <dependency>
+            <groupId>org.apache.ignite</groupId>
+            <artifactId>ignite-jta</artifactId>
+            <version>2.7.6</version>
+        </dependency>
+
+    </dependencies>
+</project>
