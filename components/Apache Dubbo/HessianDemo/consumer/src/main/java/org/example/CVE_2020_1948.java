@@ -16,9 +16,11 @@
  */
 package org.example;
 
-import com.rometools.rome.feed.impl.EqualsBean;
-import com.rometools.rome.feed.impl.ToStringBean;
+//import com.rometools.rome.feed.impl.EqualsBean;
+//import com.rometools.rome.feed.impl.ToStringBean;
 import com.sun.rowset.JdbcRowSetImpl;
+import com.sun.syndication.feed.impl.EqualsBean;
+import com.sun.syndication.feed.impl.ToStringBean;
 import org.apache.dubbo.config.annotation.Reference;
 import org.example.api.DemoService;
 import org.springframework.boot.SpringApplication;

@@ -1,7 +1,7 @@
 package org.example;
 
 import com.thoughtworks.xstream.XStream;
-import com.thoughtworks.xstream.security.AnyTypePermission;
+//import com.thoughtworks.xstream.security.AnyTypePermission;
 
 /**
  * DOS <= 1.4.9
@@ -88,7 +88,7 @@ public class CVE_2017_7957 {
 
 
         XStream xstream = new XStream();
-        xstream.addPermission(AnyTypePermission.ANY);
+//        xstream.addPermission(AnyTypePermission.ANY);
         xstream.fromXML(xml2);
     }
 

