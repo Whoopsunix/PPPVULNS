@@ -11,6 +11,8 @@ By. Whoopsunix
 - Apache Dubbo
     - [CVE-2019-17564 Apache Dubbo Provider http 协议反序列化漏洞](components/Apache%20Dubbo/CVE-2019-17564)
     - [CVE-2020-1948 Apache Dubbo Provider dubbo 协议反序列化漏洞](components/Apache%20Dubbo/HessianDemo)
+    - [CVE-2020-11995 Apache Dubbo 代码问题漏洞](components/Apache%20Dubbo/HessianDemo)
+    - [CVE-2021-25641 Apache Dubbo 可信数据反序列化（弱验证器）](components/Apache%20Dubbo/HessianDemo)
     - [CVE-2021-30179 Apache Dubbo Generic filter 远程代码执行漏洞](components/Apache%20Dubbo/HessianDemo)
 - Apache Shiro
     - [CVE-2022-32532 Apache Shiro RegExPatternMatcher 权限绕过漏洞](components/Apache%20Shiro/CVE-2022-32532)

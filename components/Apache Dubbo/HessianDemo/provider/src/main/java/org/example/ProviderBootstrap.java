@@ -30,8 +30,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 public class ProviderBootstrap {
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(ProviderBootstrap.class)
-                .run(args);
+        new SpringApplicationBuilder(ProviderBootstrap.class).run(args);
 //        SpringApplication.run(DubboAutoConfigurationProviderBootstrap.class,args);
     }
 }
