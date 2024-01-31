@@ -17,6 +17,8 @@ import java.net.Socket;
 
 /**
  * @author Whoopsunix
+ *
+ * CVE-2021-25461
  */
 public class CVE_2021_25641 {
     // Customize URL for remote targets
