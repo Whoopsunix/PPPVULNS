@@ -11,12 +11,15 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!-- CVE-2021-25641 -->
-        <!--        <dubbo.version>2.7.3</dubbo.version>-->
+        <!-- CVE-2021-25641 dubbo-common <=2.7.3 -->
+<!--                <dubbo.version>2.7.3</dubbo.version>-->
+
         <!-- CVE-2020-1948 -->
         <!-- CVE-2021-30179 -->
-        <!-- CVE-2020-11995 -->
         <dubbo.version>2.7.5</dubbo.version>
+
+        <!-- CVE-2020-11995 -->
+<!--        <dubbo.version>2.7.7</dubbo.version>-->
 
         <springboot.version>2.6.5</springboot.version>
     </properties>
