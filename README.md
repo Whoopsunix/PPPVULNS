@@ -2,7 +2,7 @@
 
 By. Whoopsunix
 
-不定时记录研究时搭的漏洞环境，附源码、 REST 文件，有必要的会提供复现分析文章
+不定时记录研究时搭的漏洞环境，附源码、 REST 文件，有必要的会提供复现分析文章（项目内或 WIKI）
 
 # 组件漏洞
 
@@ -42,9 +42,6 @@ By. Whoopsunix
     - [s2-008](components/structs2/s2-008)
 - h2database
     - [CVE-2021-23463 H2 Database 任意文件读取漏洞](components/h2database/CVE-2021-23463)
-
-- Apache
-    - Dubbo
 
 # 组件 sink 点记录
 
