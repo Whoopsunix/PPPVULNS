@@ -12,11 +12,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- CVE-2021-25641 -->
-        <dubbo.version>2.7.3</dubbo.version>
+<!--        <dubbo.version>2.7.3</dubbo.version>-->
 
         <!-- CVE-2020-1948 -->
         <!-- CVE-2021-30179 -->
-<!--        <dubbo.version>2.7.5</dubbo.version>-->
+        <dubbo.version>2.7.5</dubbo.version>
 
         <!-- CVE-2020-11995 -->
         <!--        <dubbo.version>2.7.7</dubbo.version>-->
@@ -42,6 +42,14 @@
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-common</artifactId>
             <version>${dubbo.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-dependencies-zookeeper-curator5</artifactId>
+            <!--                <version>${dubbo.version}</version>-->
+            <version>3.0.6</version>
+            <type>pom</type>
         </dependency>
 
         <dependency>
