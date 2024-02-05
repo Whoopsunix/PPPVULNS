@@ -30,6 +30,9 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 public class ProviderBootstrap {
 
     public static void main(String[] args) {
+        // CVE-2021-37579
+//        System.setProperty("serialization.security.check", "true");
+
         new SpringApplicationBuilder(ProviderBootstrap.class).run(args);
 //        SpringApplication.run(DubboAutoConfigurationProviderBootstrap.class,args);
     }

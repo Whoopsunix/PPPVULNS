@@ -23,7 +23,13 @@
 
 
         <!-- CVE-2021-32824 -->
-        <dubbo.version>2.7.9</dubbo.version>
+<!--        <dubbo.version>2.7.9</dubbo.version>-->
+
+        <!-- CVE-2021-37579 -->
+<!--        <dubbo.version>2.7.12</dubbo.version>-->
+
+        <dubbo.version>2.7.23</dubbo.version>
+
 
         <springboot.version>2.6.5</springboot.version>
     </properties>
