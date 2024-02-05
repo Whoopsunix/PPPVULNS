@@ -1,1 +1,1 @@
-分析文章见博客
+分析文章见 WIKI https://whoopsunix.com

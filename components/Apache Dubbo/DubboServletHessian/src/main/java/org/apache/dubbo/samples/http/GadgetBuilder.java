@@ -1,10 +1,8 @@
-package org.example;
+package org.apache.dubbo.samples.http;
 
 import com.alibaba.fastjson.JSONArray;
-//import com.rometools.rome.feed.impl.EqualsBean;
-//import com.rometools.rome.feed.impl.ToStringBean;
-import com.sun.syndication.feed.impl.EqualsBean;
-import com.sun.syndication.feed.impl.ToStringBean;
+import com.rometools.rome.feed.impl.EqualsBean;
+import com.rometools.rome.feed.impl.ToStringBean;
 import com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet;
 import com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl;
 import com.sun.rowset.JdbcRowSetImpl;
@@ -12,12 +10,11 @@ import javassist.ClassPool;
 import javassist.CtClass;
 import javassist.CtConstructor;
 import javassist.CtField;
-import org.example.utils.ClassFiles;
-import org.example.utils.Reflections;
+import org.apache.dubbo.samples.http.utils.ClassFiles;
+import org.apache.dubbo.samples.http.utils.Reflections;
 import org.springframework.aop.target.HotSwappableTargetSource;
 
 import javax.management.BadAttributeValueExpException;
-import javax.xml.transform.Templates;
 import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.lang.reflect.Constructor;
