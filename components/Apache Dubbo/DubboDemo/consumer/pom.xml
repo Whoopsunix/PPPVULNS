@@ -74,6 +74,12 @@
             <artifactId>rome</artifactId>
             <version>1.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.xbean</groupId>
+            <artifactId>xbean-naming</artifactId>
+            <version>4.15</version>
+        </dependency>
     </dependencies>
 
     <build>

@@ -17,7 +17,6 @@ import org.example.utils.Reflections;
 import org.springframework.aop.target.HotSwappableTargetSource;
 
 import javax.management.BadAttributeValueExpException;
-import javax.xml.transform.Templates;
 import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.lang.reflect.Constructor;
@@ -52,7 +51,12 @@ public class GadgetBuilder {
     }
 
 
-    // Fastjson
+    /**
+     * fastjson
+     * @param command
+     * @return
+     * @throws Exception
+     */
     public static Object fastjson(String command) throws Exception {
         Object templates = createTemplatesImpl(command);
 

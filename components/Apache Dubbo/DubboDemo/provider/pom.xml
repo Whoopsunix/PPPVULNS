@@ -28,8 +28,9 @@
         <!-- CVE-2021-37579 -->
 <!--        <dubbo.version>2.7.12</dubbo.version>-->
 
-        <dubbo.version>2.7.23</dubbo.version>
+        <dubbo.version>2.7.12</dubbo.version>
 
+<!--        <dubbo.version>2.7.23</dubbo.version>-->
 
         <springboot.version>2.6.5</springboot.version>
     </properties>
@@ -77,6 +78,12 @@
             <groupId>org.apache.xbean</groupId>
             <artifactId>xbean-reflect</artifactId>
             <version>4.14</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.xbean</groupId>
+            <artifactId>xbean-naming</artifactId>
+            <version>4.15</version>
         </dependency>
     </dependencies>
 
