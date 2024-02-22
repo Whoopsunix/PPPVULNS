@@ -34,6 +34,8 @@ public class ProviderBootstrap {
 //        System.setProperty("serialization.security.check", "true");
 
         new SpringApplicationBuilder(ProviderBootstrap.class).run(args);
+
+
 //        SpringApplication.run(DubboAutoConfigurationProviderBootstrap.class,args);
     }
 }

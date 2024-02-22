@@ -16,7 +16,7 @@
 
         <!-- CVE-2020-1948 -->
         <!-- CVE-2021-30179 -->
-        <!--        <dubbo.version>2.7.5</dubbo.version>-->
+<!--                <dubbo.version>2.7.5</dubbo.version>-->
 
         <!-- CVE-2020-11995 -->
         <!--        <dubbo.version>2.7.7</dubbo.version>-->
@@ -26,10 +26,15 @@
 <!--        <dubbo.version>2.7.9</dubbo.version>-->
 
         <!-- CVE-2021-37579 -->
+        <!-- CVE-2021-43297 -->
 <!--        <dubbo.version>2.7.12</dubbo.version>-->
 
-        <dubbo.version>2.7.12</dubbo.version>
+        <!-- CVE-2022-39198 -->
+<!--        <dubbo.version>2.7.17</dubbo.version>-->
 
+        <dubbo.version>2.7.18</dubbo.version>
+
+        <!-- EXP -->
 <!--        <dubbo.version>2.7.23</dubbo.version>-->
 
         <springboot.version>2.6.5</springboot.version>

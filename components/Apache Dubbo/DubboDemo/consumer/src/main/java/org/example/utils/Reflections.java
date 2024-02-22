@@ -23,6 +23,11 @@ public class Reflections {
         field.set(obj, value);
     }
 
+    public static Object getFieldValue(final Object obj, final String fieldName) throws Exception {
+        final Field field = getField(obj.getClass(), fieldName);
+        return field.get(obj);
+    }
+
     public static <T> T createWithoutConstructor(Class<T> classToInstantiate) throws NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
         return createWithConstructor(classToInstantiate, Object.class, new Class[0], new Object[0]);
     }
