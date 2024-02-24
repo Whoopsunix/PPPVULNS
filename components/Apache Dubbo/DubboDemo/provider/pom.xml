@@ -32,10 +32,11 @@
         <!-- CVE-2022-39198 -->
 <!--        <dubbo.version>2.7.17</dubbo.version>-->
 
-        <dubbo.version>2.7.18</dubbo.version>
+        <!-- CVE-2023-23638 -->
+<!--        <dubbo.version>2.7.21</dubbo.version>-->
 
         <!-- EXP -->
-<!--        <dubbo.version>2.7.23</dubbo.version>-->
+        <dubbo.version>2.7.23</dubbo.version>
 
         <springboot.version>2.6.5</springboot.version>
     </properties>

@@ -23,6 +23,10 @@ By. Whoopsunix
     - [CVE-2021-36162 Apache Dubbo Mesh Yaml pre-auth 反序列化漏洞](components/Apache%20Dubbo/DubboMeshRuleDemo)
     - [CVE-2021-36163 Apache Dubbo Hessian2 协议反序列化漏洞](components/Apache%20Dubbo/DubboServletHessian)
     - [CVE-2021-37579 Apache Dubbo 反序列化安全检查绕过](components/Apache%20Dubbo/DubboDemo)
+    - [CVE-2021-43297 Apache Dubbo Hessian-Lite 反序列化漏洞](components/Apache%20Dubbo/DubboDemo)
+    - [CVE-2022-39198 Apache Dubbo Hessian-Lite 反序列化漏洞](components/Apache%20Dubbo/DubboDemo)
+    - [CVE-2023-23638 Apache Dubbo 反序列化漏洞](components/Apache%20Dubbo/DubboDemo)
+    - [Apache Dubbo <= 2.7.23 反序列化漏洞](components/Apache%20Dubbo/DubboDemo)
 - Apache Shiro
     - [CVE-2022-32532 Apache Shiro RegExPatternMatcher 权限绕过漏洞](components/Apache%20Shiro/CVE-2022-32532)
 - Apache Tapestry
