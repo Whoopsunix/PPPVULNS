@@ -67,6 +67,7 @@ public class GadgetBuilder {
         Reflections.setFieldValue(bd, "val", jsonArray);
         HashMap hashMap = new HashMap();
         hashMap.put(new HotSwappableTargetSource(templates), new HotSwappableTargetSource(bd));
+//        hashMap.put(templates, bd);
         return hashMap;
 
 //        XString x = new XString("HEYO");
