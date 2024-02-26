@@ -21,7 +21,7 @@ import org.springframework.context.annotation.Bean;
 @EnableAutoConfiguration
 public class CVE_2020_1948 {
 
-    @Reference(version = "1.0", url = "dubbo://127.0.0.1:12345")
+    @Reference(version = "1.0", url = "dubbo://127.0.0.1:12345", parameters = {"whoopsunix=123"})
     private DemoService demoService;
 
     public static void main(String[] args) {
