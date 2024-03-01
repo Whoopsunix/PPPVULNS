@@ -54,6 +54,8 @@ By. Whoopsunix
     - [s2-008](components/structs2/s2-008)
 - h2database
     - [CVE-2021-23463 H2 Database 任意文件读取漏洞](components/h2database/CVE-2021-23463)
+- Mysql
+    - [CVE-2021-2471 Oracle MySQL 输入验证错误漏洞](components/Mysql/CVE-2021-2471)
 
 # 组件 sink 点记录
 
